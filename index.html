@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus App MVP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-blue-900 text-white shadow-md z-50">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tight">UCC Campus App</h1>
+            <nav>
+                <ul class="flex space-x-4 text-sm font-medium">
+                    <li><a href="#horarios" class="hover:text-blue-300 transition">Horarios</a></li>
+                    <li><a href="#tramites" class="hover:text-blue-300 transition">Trámites</a></li>
+                    <li><a href="#mapa" class="hover:text-blue-300 transition">Mapa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto pt-20 pb-10 px-4 space-y-12">
+        
+        <!-- Section: Cronograma de Clases -->
+        <section id="horarios" class="scroll-mt-20">
+            <h2 class="text-2xl font-bold mb-6 text-blue-900 border-b-2 border-blue-200 pb-2">Cronograma de Clases</h2>
+            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Lunes -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-3">Lunes</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex justify-between border-b border-gray-50 pb-1">
+                            <span>08:00 - Matemática</span>
+                            <span class="text-gray-500 text-xs mt-0.5">Aula 101</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-50 pb-1">
+                            <span>10:30 - Física</span>
+                            <span class="text-gray-500 text-xs mt-0.5">Aula 204</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Martes -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-3">Martes</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex justify-between border-b border-gray-50 pb-1">
+                            <span>09:00 - Programación</span>
+                            <span class="text-gray-500 text-xs mt-0.5">Lab 3</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-50 pb-1">
+                            <span>14:00 - Diseño</span>
+                            <span class="text-gray-500 text-xs mt-0.5">Aula 105</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Miércoles -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-3">Miércoles</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex justify-between border-b border-gray-50 pb-1">
+                            <span>08:00 - Matemática</span>
+                            <span class="text-gray-500 text-xs mt-0.5">Aula 101</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Jueves -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-3">Jueves</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex justify-between border-b border-gray-50 pb-1">
+                            <span>10:00 - Ética</span>
+                            <span class="text-gray-500 text-xs mt-0.5">Aula Magna</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Viernes -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-3">Viernes</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex justify-between border-b border-gray-50 pb-1">
+                            <span>11:00 - Taller</span>
+                            <span class="text-gray-500 text-xs mt-0.5">Lab 1</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Directorio y Trámites (FAQ) -->
+        <section id="tramites" class="scroll-mt-20">
+            <h2 class="text-2xl font-bold mb-6 text-blue-900 border-b-2 border-blue-200 pb-2">Directorio y Trámites</h2>
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden divide-y divide-gray-100">
+                
+                <details class="group p-4" open>
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-gray-800 hover:text-blue-600 transition">
+                        <span>¿Cómo solicito un certificado de alumno regular?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-3 text-sm leading-relaxed animate-fade-in">
+                        Puedes solicitarlo a través del portal de autogestión con tu usuario y contraseña, o presencialmente en Secretaría Académica de 08:00 a 14:00.
+                    </div>
+                </details>
+
+                <details class="group p-4">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-gray-800 hover:text-blue-600 transition">
+                        <span>¿Cuáles son los horarios de la biblioteca?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-3 text-sm leading-relaxed animate-fade-in">
+                        La biblioteca central está abierta de Lunes a Viernes de 08:00 a 20:00 y los Sábados de 09:00 a 13:00.
+                    </div>
+                </details>
+
+                <details class="group p-4">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-gray-800 hover:text-blue-600 transition">
+                        <span>¿Dónde realizo el pago de la matrícula?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-3 text-sm leading-relaxed animate-fade-in">
+                        Los pagos se pueden realizar online mediante tarjeta de crédito/débito en la sección de Tesorería del portal, o en las cajas presenciales ubicadas en el edificio principal.
+                    </div>
+                </details>
+
+            </div>
+        </section>
+
+        <!-- Section: Mapa del Campus -->
+        <section id="mapa" class="scroll-mt-20">
+            <h2 class="text-2xl font-bold mb-6 text-blue-900 border-b-2 border-blue-200 pb-2">Mapa del Campus</h2>
+            <div class="bg-gray-200 rounded-xl overflow-hidden shadow-inner aspect-video flex items-center justify-center relative border border-gray-300">
+                <!-- Placeholder for Map -->
+                <div class="text-center p-6">
+                    <svg class="w-12 h-12 text-gray-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <p class="text-gray-500 font-medium">Mapa Interactivo (Próximamente)</p>
+                    <p class="text-xs text-gray-400 mt-1">Ubicación central del campus</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-blue-900 text-blue-200 py-6 text-center text-sm">
+        <p>&copy; 2026 UCC Campus App. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
